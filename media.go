@@ -103,7 +103,6 @@ type MediaConn struct {
 	} `json:"media_conn"`
 }
 
-
 func (wac *Conn) queryMediaConn() (hostname, auth string, ttl int, err error) {
 	queryReq := []interface{}{"query", "mediaConn"}
 	ch, err := wac.writeJson(queryReq)
